@@ -1,0 +1,138 @@
+/*================================================================*/
+/*************CSS reset**************/
+html,body,div,td,th
+{
+	padding: 0;
+	margin: 0;
+}
+html,body
+{
+	font-size: 10pt;
+	font-family: 'PT Sans','Arial', sans-serif;
+}
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+    border: 0.8mm solid black !important;
+}
+/*================================================================*/
+/*************CSS base classes**************/
+
+td,th
+{
+	border: 0.5mm solid black;
+}
+td
+{
+    text-align: right;
+	padding-right: 1mm;
+}
+.clear
+{
+	content: '';
+	clear: both;
+}
+.full-width
+{
+	width: 100%;
+}
+.dotted-line
+{
+	border-bottom: 0.3mm dotted black;
+}
+.error-msg
+{
+    background: #f90606;
+    color: #fafafa;
+}
+/*================================================================*/
+/*************CSS build classes**************/
+.test
+{
+	line-height: 1;
+	width: 165mm;
+	margin:0 auto;
+}
+.qcell>div
+{
+    text-align: left;
+    padding-right: 0mm;
+}
+.dotted-line-box
+{
+    padding: 0 3mm 2mm 3mm;
+}
+.w-tbl td
+{
+	vertical-align: bottom;
+}
+.c-tbl
+{
+    float: left;
+	width: 56mm;
+    word-break: break-all;
+}
+.c-tbl td:first-child
+{
+	width: 12.5mm;
+    padding-left: 1mm;
+}
+
+.c-tbl td,
+.c-tbl th,
+.w-tbl td
+{
+	height: 7mm;
+}
+.c-tbl-sn
+{
+    padding-left: 1mm;
+}
+.rowlabel:first-child
+{
+	width: 68.5mm;
+}
+td.rowlabel
+{
+    text-align: left;
+	padding-left: 1mm;
+}
+.qmain
+{
+    float: left;
+    padding-left: 2.5mm;
+}
+.text-center,
+.qbox>div
+{
+    text-align: center;
+}
+.qbox
+{
+	padding-top: 4mm;
+    padding-bottom: 1mm;
+}
+.qbox .dotted-line
+{
+	width: 15mm;
+}
+.qbox .dotted-line,
+.sbox .dotted-line
+{
+	display: inline-block;
+}
+.smain
+{
+    float: right;
+	width: 40mm;
+}
+.sbox
+{
+    padding-top: 1mm;
+}
+.sbox img
+{
+	height: 10mm;
+	max-width: 30mm;
+}
