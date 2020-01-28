@@ -3,6 +3,9 @@ var SimpleDOMCreator = function()
 {   
     function DOMTreeBuilder( Data, MainParentElement, ParentElement, GrandParentElement )
     {
+        if(Data === null || Data===undefined || Data =='')
+            return false;
+            
         var Target = null;
         var MainParent = null;
         var Parent = ParentElement !== undefined ? ParentElement : null;
